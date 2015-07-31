@@ -6,3 +6,7 @@
 - [http://docs.deis.io/en/latest/using_deis/using-buildpacks]()
 
 ![](https://raw.githubusercontent.com/radamanthus/deis-under-the-hood/master/assets/create-application-step-1.png)
+
+![](https://raw.githubusercontent.com/radamanthus/deis-under-the-hood/master/assets/create-application-step-2.png)
+
+![](https://raw.githubusercontent.com/radamanthus/deis-under-the-hood/master/assets/create-application-step-3.png)

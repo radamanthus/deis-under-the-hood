@@ -18,19 +18,9 @@ The documentation for the [Builder] (http://docs.deis.io/en/latest/understanding
 1. `/home/git/builder` pulls the latest config from `controller` and combines it with a new build to create a new Docker image.
 
   ![](https://raw.githubusercontent.com/radamanthus/deis-under-the-hood/master/assets/deployment-step-2.png)
-
-1. Builder creates a new Docker image
-
-  asdf
   
-1. Builder retreives the latest Config from Controller, and adds it to the Docker image
-
-  asdf
-
-1. Builder pushes the new Docker image to the Registry
-
-  asdf
-
-1. Triggers a new Release through the Controller
+  ![](https://raw.githubusercontent.com/radamanthus/deis-under-the-hood/master/assets/deployment-step-2-b.png)
+    
+1. `/home/git/builder` pushes the new Docker image to the Registry and triggers a new Release through the Controller
 
   asdf

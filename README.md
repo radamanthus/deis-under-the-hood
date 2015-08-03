@@ -7,8 +7,8 @@ If you're just starting out with Deis, I'd recommend going through [http://docs.
 
 This guide walks you through common Deis operations and describes what goes on under the hood.
 
-- Create an application
-- Deploy
+- [Create an application](create_application.md)
+- [Deploy](deployment.md)
 - Configure the runtime environment
 - View logs
 - Scale up

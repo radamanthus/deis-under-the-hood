@@ -11,22 +11,26 @@ Deis deployment is described in these documents:
 
 The documentation for the [Builder] (http://docs.deis.io/en/latest/understanding_deis/components/#builder) component describes what goes on in Builder during deployment. Let's use that as a starting point and dig into what goes on under the hood during deployment:
 
-1. Builder receives the git push and triggers the pre-receive git hook
+1. Builder receives the git push and triggers the pre-receive git hook. This launches the `/home/git/builder` script inside the `builder` container.
 
   ![](https://raw.githubusercontent.com/radamanthus/deis-under-the-hood/master/assets/deployment-step-1.png)
 
-2. Builder creates a new Docker image
+1. `/home/git/builder` pulls the latest config from `controller` and combines it with a new build to create a new Docker image.
+
+  ![](https://raw.githubusercontent.com/radamanthus/deis-under-the-hood/master/assets/deployment-step-2.png)
+
+1. Builder creates a new Docker image
 
   asdf
   
-3. Builder retreives the latest Config from Controller, and adds it to the Docker image
+1. Builder retreives the latest Config from Controller, and adds it to the Docker image
 
   asdf
 
-4. Builder pushes the new Docker image to the Registry
+1. Builder pushes the new Docker image to the Registry
 
   asdf
 
-5. Triggers a new Release through the Controller
+1. Triggers a new Release through the Controller
 
   asdf

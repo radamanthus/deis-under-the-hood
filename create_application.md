@@ -5,7 +5,7 @@
 - [http://docs.deis.io/en/latest/using_deis/deploy-application]()
 - [http://docs.deis.io/en/latest/using_deis/using-buildpacks]()
 
-1. `deis` client calls the controller API
+1. The `deis` client calls the controller API running on the `controller` service
 
   ![](https://raw.githubusercontent.com/radamanthus/deis-under-the-hood/master/assets/create-application-step-1.png)
 
